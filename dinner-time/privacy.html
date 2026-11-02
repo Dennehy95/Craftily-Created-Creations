@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dinner Time Privacy Policy</title>
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #1d2733; background: #fff; margin: 0; padding: 0 1rem; }
+  main { max-width: 42rem; margin: 0 auto; padding: 1.5rem 0 3rem; }
+  h1 { font-size: 1.7rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.2rem; margin: 2rem 0 .5rem; }
+  p, li { font-size: 1rem; }
+  ul { padding-left: 1.25rem; }
+  code { background: #eef1f4; padding: .05rem .3rem; border-radius: 3px; word-break: break-all; }
+  .meta { color: #55606c; margin: 0 0 1.5rem; }
+  a { color: #0b5cad; }
+  .back { margin: 0 0 1rem; font-size: .95rem; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #12171d; color: #e4e9ee; }
+    .meta { color: #a3adb8; }
+    code { background: #222a33; }
+    a { color: #7db7f0; }
+  }
+</style>
+</head>
+<body>
+<main>
+<p class="back"><a href="../index.html">&larr; Craftily Created Creations</a></p>
+<h1>Dinner Time Privacy Policy</h1>
+<p class="meta">Effective and last updated: 2 November 2026</p>
+
+<p>Dinner Time (Android package <code>com.dinnertime.app</code>) is a pantry, recipe and shopping list app by Bryan Dennehy, trading as Craftily Created Creations, in Ireland (&ldquo;the developer&rdquo;, &ldquo;I&rdquo;). In short: <strong>in Local mode everything stays on your phone. If you sign in and share a list, that list and your basic Google account details are kept on a small server the developer runs himself, only so the list can be shared and alerts can be sent.</strong></p>
+
+<h2>Summary</h2>
+<ul>
+  <li>When you first open the app you choose <strong>Local</strong> or <strong>Online</strong>.</li>
+  <li><strong>Local mode:</strong> no account, no sign-in. Your lists are kept only on your phone and the app works offline.</li>
+  <li><strong>Online mode:</strong> you can sign in with Google. Signing in on its own does not upload a list. A list is uploaded only when you choose to share it, or when you join someone else&rsquo;s list with a join code.</li>
+  <li>Photos you add to items or recipes stay on your phone. They are never uploaded.</li>
+  <li>No advertising and no analytics or crash-reporting tools.</li>
+  <li>Your data is never sold, and it is not shared with anyone except the service providers listed below that are needed to run the features you use.</li>
+</ul>
+
+<h2>Data kept on your phone</h2>
+<p>The app stores your lists, pantry items (name, category, status, aisles, fresh-for days, alert dates and times), recipes (name, instructions, ingredients, &ldquo;on the menu&rdquo;), shops, status history, the photos you choose, and app settings (Local or Online mode, theme, active list). All of this is saved in the app&rsquo;s private storage on your device. If you sign in, the session for the Dinner Time server is also stored on the phone, encrypted.</p>
+<p>Photos are picked with Android&rsquo;s photo picker, which only gives the app the photo you select. The app keeps a resized copy in its private storage. It does not access the rest of your photo library or your camera.</p>
+
+<h2>Data sent to the Dinner Time server (Online mode only)</h2>
+<p>The Dinner Time server is a small server operated by the developer himself, on his own computer in Ireland. It is reached over the internet at an HTTPS address published through Tailscale. All traffic between the app and the server is encrypted in transit (HTTPS/TLS). The server stores only:</p>
+<ul>
+  <li><strong>Your Google account details</strong>, when you sign in: your Google account ID, email address and name, plus when you created the account and last signed in. These come from Google&rsquo;s sign-in (through Android Credential Manager), after you pick an account. The app never sees your Google password.</li>
+  <li><strong>Sign-in sessions</strong>: a hashed session token, your phone&rsquo;s model name (for example &ldquo;Pixel 8&rdquo;) as a device label, and when the session was created, last used and expires. A session lasts 60 days and is extended when used.</li>
+  <li><strong>Shared lists</strong>, only for lists you share or join: the list&rsquo;s suggested name, its members and when they joined or left, and the list&rsquo;s pantry items, recipes, shops and status history (the same fields as above, <strong>without photos</strong>). Each change records which member made it. Join codes are stored only as a hash and expire after 24 hours.</li>
+  <li><strong>Push notification details</strong>: your phone&rsquo;s Firebase Cloud Messaging token (if you allow notifications), your push notifications on/off setting, a record of which alerts were already sent to which device, and the shared freshness alert time for the server.</li>
+</ul>
+<p>The server also keeps short technical logs (for example &ldquo;user 12 signed in&rdquo;, using an internal number rather than your email) so the developer can fix problems. Your internet address may be used briefly, in memory, to limit repeated sign-in or join attempts; it is not saved in the database.</p>
+<p>People who share a list with you can see that list&rsquo;s contents and how many people are on it.</p>
+
+<h2>Why the data is used</h2>
+<ul>
+  <li>To sign you in and keep you signed in (account management).</li>
+  <li>To keep a shared list the same on everyone&rsquo;s phone (app functionality).</li>
+  <li>To send item alerts you have set up (app functionality).</li>
+  <li>To keep the service secure and working, for example limiting repeated attempts and fixing errors.</li>
+</ul>
+<p>It is not used for advertising, profiling or marketing, and it is never sold.</p>
+
+<h2>Push notifications</h2>
+<p>If you are signed in and allow notifications, the app sends its Firebase Cloud Messaging token to the Dinner Time server. The server sends a notification only for item alerts on your shared lists: when a &ldquo;Got&rsquo;em&rdquo; item is past its fresh-for days, or when a custom alert you set on an item is due. The notification says &ldquo;Dinner Time&rdquo; and the item&rsquo;s name. You can turn push notifications off in the app (Profile &gt; Account &gt; Push notifications); this is saved for your account, so the server then sends you nothing on any phone. You can also turn off notifications in Android settings. Signing out removes this phone&rsquo;s token from the server.</p>
+
+<h2>Permissions the app uses</h2>
+<ul>
+  <li><strong>Internet (<code>INTERNET</code>)</strong> &ndash; to sign in with Google, sync shared lists with the Dinner Time server and receive push notifications. In Local mode the app does not need it.</li>
+  <li><strong>Notifications (<code>POST_NOTIFICATIONS</code>)</strong> &ndash; to show item alerts. On Android 13 and later the app asks for this permission.</li>
+</ul>
+<p>The app does not request access to your contacts, location, camera, microphone or files. Photos are chosen through the Android photo picker, as described above.</p>
+
+<h2>Service providers</h2>
+<ul>
+  <li><strong>Google</strong> &ndash; Sign in with Google (Android Credential Manager / Google Play services) and Firebase Cloud Messaging, which delivers push notifications to your phone. Google&rsquo;s handling of this data is covered by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+  <li><strong>Tailscale</strong> &ndash; carries the encrypted connection between the internet and the developer&rsquo;s server.</li>
+</ul>
+<p>No other third parties receive your data.</p>
+
+<h2>Export, import and backups</h2>
+<p>You can export a list to a file and import one later. This is always started by you: the file is saved to, or read from, a location you pick using Android&rsquo;s file picker, and it can include the list&rsquo;s photos. The developer never receives the file. You can also share a join code using Android&rsquo;s share menu; only the code is shared.</p>
+<p>Android&rsquo;s own device backup feature (if you have it turned on in your phone settings) may include app data as part of your device backup. That is provided and controlled by Android and your Google account settings, not by this app or the developer.</p>
+<p>The developer makes regular backups of the server database so shared lists are not lost. Backups are kept for about 14 days, and any copy kept off the server is encrypted.</p>
+
+<h2>Deleting your data</h2>
+<ul>
+  <li><strong>On your phone:</strong> you can delete items, recipes and lists in the app (deleting a list removes its items and photos from the phone). Uninstalling the app, or clearing its storage in Android Settings &gt; Apps &gt; Dinner Time &gt; Storage, removes all of its data from the phone.</li>
+  <li><strong>Sign out</strong> (Profile &gt; Account) ends the session on the server and removes this phone&rsquo;s push token.</li>
+  <li><strong>Leave this list</strong> (Profile &gt; Sharing) removes you from a shared list. You keep a private copy on your phone; the shared list stays for its other members.</li>
+  <li><strong>Deleting your account and server data:</strong> email <a href="mailto:bryandennehy1995@gmail.com">bryandennehy1995@gmail.com</a> from your Google account&rsquo;s email address and ask for your Dinner Time account to be deleted. The developer will delete your account details, sessions, device tokens and memberships, and any shared list that has no other members, within 30 days. Changes you made to a list that is still shared with other people may stay in that list for them, but will no longer be linked to your name or email. Data in the developer&rsquo;s backups is removed as those backups expire.</li>
+</ul>
+<p>Under EU data protection law (GDPR) you can also ask for a copy of your data, ask for it to be corrected, or object to its use, by emailing the address below. You also have the right to complain to the Irish Data Protection Commission.</p>
+
+<h2>Children</h2>
+<p>Dinner Time is not directed at children under 13, and the developer does not knowingly collect personal information from children. If you believe a child has signed in, email the address below and the account will be deleted.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the updated version will be published on this page and the &ldquo;Last updated&rdquo; date above will change.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy? Email Bryan Dennehy at <a href="mailto:bryandennehy1995@gmail.com">bryandennehy1995@gmail.com</a>.</p>
+<p class="back"><a href="../index.html">&larr; Back to all apps</a></p>
+</main>
+</body>
+</html>
