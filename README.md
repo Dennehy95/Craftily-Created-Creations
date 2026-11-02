@@ -24,6 +24,9 @@ Pattern: `https://dennehy95.github.io/Craftily-Created-Creations/<app-slug>/priv
 E-Fishcient (use this in Google Play Console):
 https://dennehy95.github.io/Craftily-Created-Creations/e-fishcient/privacy.html
 
+Dinner Time (use this in Google Play Console):
+https://dennehy95.github.io/Craftily-Created-Creations/dinner-time/privacy.html
+
 ## Enabling GitHub Pages
 
 Pages must be enabled once: **Settings > Pages > Build and deployment > Deploy from a branch > `main` > `/ (root)` > Save**.
